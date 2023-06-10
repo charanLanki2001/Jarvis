@@ -1,0 +1,40 @@
+1)we have to import pyttsx3-pip install pyttsx3
+
+2)the import pyttsx3 used for speak in build future API in microsoft that is 'sapi5' 
+
+3)we assigned pyttsx3 sapi5 voice by using init=As a constructor
+
+4)the we get voice from API
+
+5)engine.runWait() will speak output
+
+6)WisnME(): this wish the user according to the time 
+
+%Speech Rcognition%
+1)install speech reconition-pip install SpeechRecognition
+2)the import speech reconition using speech-reconition as sr
+3)sr.Microphone uses your microphone 
+
+!listening code!
+1) r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening...")
+        r.pause_threshold = 1
+        audio = r.listen(source)
+    
+2)query = r.recognize_google(audio,language='en-in')- online language selector
+3)inbuilt wikipedia in py-if 'wikipedia' in query:
+            speak('Searching Wikipedia')
+!search text in google!
+1) elif '' in query:
+            speak(f"Here some information i get")
+            path="https://www.google.com/search?q="+ query
+            os.startfile(path)
+
+!PIP INSTALLS!
+      pip install wikipedia
+      pip install PyAudio  
+	pip install pipwin 
+pip insall pypiwin32
+ pip install win11toast
+  pip install speedtest-cli
